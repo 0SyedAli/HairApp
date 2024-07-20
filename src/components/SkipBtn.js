@@ -1,7 +1,7 @@
 import { StyleSheet, Text, TouchableOpacity} from 'react-native';
 import React from 'react';
 
-const GoBackBtn = ({navigation}) => {
+const SkipBtn = ({navigation}) => {
   return (
     <TouchableOpacity style={styles.backButton} onPress={() => navigation.goBack()}>
         <Text style={styles.skipBtnText}>Skip</Text>
@@ -9,7 +9,7 @@ const GoBackBtn = ({navigation}) => {
   );
 };
 
-export default GoBackBtn;
+export default SkipBtn;
 
 const styles = StyleSheet.create({
   backButton: {

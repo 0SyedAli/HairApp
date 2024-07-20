@@ -16,11 +16,11 @@ const BottomTabs = () => {
       screenOptions={{
         headerShown: false,
         tabBarShowLabel: false,
-        tabBarActiveTintColor: colors.secondary,
-        tabBarInactiveTintColor: 'gray',
+        tabBarActiveTintColor: '#CD8A1A',
+        tabBarInactiveTintColor: '#CD8A1A',
         tabBarStyle: {
           borderTopWidth: 0,
-          height: Platform.OS === 'ios' ? 100 : 70,
+          height: Platform.OS === 'ios' ? 100 : 65,
           backgroundColor: colors.primary,
           position: 'absolute',
           bottom: 0,
@@ -39,10 +39,10 @@ const BottomTabs = () => {
           tabBarIcon: ({focused, color, size}) =>
             focused ? (
               <View style={styles.iconView}>
-                <Icon name="home" color={color} size={size}/>
+                <Icon name="home" color={color} size={21}/>
               </View>
             ) : (
-              <Icon name="home" color={color} size={size}/>
+              <Icon name="home" color={color} size={21}/>
             ),
         }}
       />
@@ -53,10 +53,10 @@ const BottomTabs = () => {
           tabBarIcon: ({focused, color, size}) =>
             focused ? (
               <View style={styles.iconView}>
-                <Icon name="map-pin" color={color} size={size}/>
+                <Icon name="map-pin" color={color} size={19}/>
               </View>
             ) : (
-              <Icon name="map-pin" color={color} size={size}/>
+              <Icon name="map-pin" color={color} size={19}/>
             ),
         }}
       />
@@ -67,10 +67,10 @@ const BottomTabs = () => {
           tabBarIcon: ({focused, color, size}) =>
             focused ? (
               <View style={styles.iconView}>
-                <Icon name="shopping-cart" color={color} size={size}/>
+                <Icon name="shopping-cart" color={color} size={21}/>
               </View>
             ) : (
-              <Icon name="shopping-cart" color={color} size={size}/>
+              <Icon name="shopping-cart" color={color} size={21}/>
             ),
         }}
       />
@@ -81,10 +81,10 @@ const BottomTabs = () => {
           tabBarIcon: ({focused, color, size}) =>
             focused ? (
               <View style={styles.iconView}>
-                <Icon name="settings" color={color} size={size}/>
+                <Icon name="settings" color={color} size={20}/>
               </View>
             ) : (
-              <Icon name="settings" color={color} size={size}/>
+              <Icon name="settings" color={color} size={20}/>
             ),
         }}
         
@@ -97,7 +97,7 @@ export default BottomTabs;
 
 const styles = StyleSheet.create({
   iconView: {
-    backgroundColor: '#9D701D',
+    backgroundColor: '#cd8a1a24',
     borderRadius:100,
     height:50,
     width:50,

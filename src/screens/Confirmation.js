@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
   background: {
     flex: 1,
     resizeMode: 'cover', // or 'contain' as per your design needs
-    marginTop: 20,
+    paddingTop: 60,
     paddingHorizontal: 40,
   },
   body_container: {

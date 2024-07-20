@@ -7,17 +7,13 @@ import GoBackBtn from '../components/GoBackBtn';
 import InputType from '../components/InputType';
 import SocialBtn from '../components/SocialBtn';
 import images from '../asset/images/index';
-import {
-  widthPercentageToDP as wp,
-  heightPercentageToDP as hp,
-} from 'react-native-responsive-screen';
 import globalStyles from '../components/GlobalStyles';
 
 const GetStarted = ({navigation}) => {
   return (
     <View style={globalStyles.container}>
       <ImageBackground source={Img.auth_background} style={styles.background}>
-        <GoBackBtn navigation={navigation} />
+        <GoBackBtn navigation={navigation} style={styles.header} />
         <View style={styles.body_container}>
           <View>
             <Image source={Img.layer_img} style={styles.image} />
@@ -51,8 +47,11 @@ const styles = StyleSheet.create({
   background: {
     flex: 1,
     resizeMode: 'cover', // or 'contain' as per your design needs
-    marginTop: 20,
+    paddingTop: 60,
     paddingHorizontal: 40,
+  },
+  header: {
+    marginTop:40,
   },
   body_container: {
     flex: 1,

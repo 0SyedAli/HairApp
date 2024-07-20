@@ -108,7 +108,6 @@ const Home = () => {
                 ))}
               </View>
             </View>
-
             <View style={styles.slideContainer}>
               <View style={styles.topStylists}>
                 <Text style={styles.h2}>Top stylists</Text>
@@ -162,7 +161,7 @@ const Home = () => {
                   loop
                   width={width}
                   height={width / 2}
-                  autoPlay={false}
+                  autoPlay={true}
                   data={cardContent} // Match the data length to cardContent
                   scrollAnimationDuration={1000}
                   onSnapToItem={index => {
@@ -445,6 +444,7 @@ const styles = StyleSheet.create({
 
   paginationIconContainer: {
     paddingVertical: 50,
+    paddingBottom: 110,
     justifyContent: 'center',
     alignContent: 'center',
     flexDirection: 'row',
